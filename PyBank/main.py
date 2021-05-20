@@ -1,0 +1,5 @@
+f = open("file.txt","w+")
+print("Hello", file=f)
+print(" ", file=f)
+print("World", file=f)
+f.close()
