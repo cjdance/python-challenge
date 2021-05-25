@@ -1,3 +1,4 @@
+#Import dependencies
 import os
 import csv
 
@@ -23,7 +24,7 @@ def average(numbers):
 with open(budget_csv,'r') as csvfile:
 
     csvreader = csv.reader(csvfile,delimiter=',')
-
+    #Store header from CSV file
     header = next(csvreader)
 
     #Create list of month data and profit/loss data
